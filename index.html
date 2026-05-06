@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Money Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Money Tracker</h1>
+        <div class="balance">Balance: $<span id="balance">0.00</span></div>
+
+        <form id="transaction-form">
+            <input type="text" id="text" placeholder="What did you buy?">
+            <input type="number" id="amount" placeholder="Amount (e.g., -20 for lunch, 50 for salary)">
+            <button type="submit">Add Transaction</button>
+        </form>
+
+        <h3>History</h3>
+        <ul id="list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
