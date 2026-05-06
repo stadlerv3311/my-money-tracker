@@ -1,0 +1,74 @@
+/* 1. Basic Setup */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* 2. The Main Container Card */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+
+/* 3. The Balance Display */
+.balance {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* 4. The Inputs and Button */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* This keeps padding from breaking the width */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* 5. The History List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto; /* Adds a scrollbar if the list gets too long */
+}
+
+li {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  border-right: 5px solid #bbb;
+}
+
+/* Red line for spending, green for income */
+li.plus { border-right-color: #2ecc71; }
+li.minus { border-right-color: #c0392b; }
